@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e50914;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+
+    .hero {
+      height: 80vh;
+      background: url('https://assets.nflxext.com/ffe/siteui/vlv3/7db3e4c1-c2f3-44e6-80dc-4e4c3b0d9698/6fa3b11b-f95b-4f7b-b2a7-c1cf94b7d563/NG-en-20230911-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-content {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 8px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero input[type="email"] {
+      padding: 10px;
+      width: 300px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 2px;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background-color: #e50914;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .row {
+      margin: 30px 20px;
+    }
+
+    .row h2 {
+      margin-bottom: 10px;
+    }
+
+    .row-posters {
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .row-posters img {
+      width: 150px;
+      margin-right: 10px;
+      border-radius: 4px;
+      transition: transform 0.2s;
+    }
+
+    .row-posters img:hover {
+      transform: scale(1.1);
+    }
+
+    ::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #555;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .hero input[type="email"] {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">NETFLIX</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows, and more</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <input type="email" placeholder="Email address">
+      <button>Get Started</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Trending Now</h2>
+    <div class="row-posters">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 1">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 2">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 3">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 4">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 5">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 6">
+    </div>
+  </div>
+
+  <div class="row">
+    <h2>Top Picks for You</h2>
+    <div class="row-posters">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 7">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 8">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 9">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 10">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 11">
+      <img src="https://via.placeholder.com/150x220" alt="Movie 12">
+    </div>
+  </div>
+
+</body>
+</html>
